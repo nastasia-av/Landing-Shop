@@ -255,18 +255,30 @@ main {
     padding: 10px;
     border-radius:15px;
     border:0;
+    outline: none;
     box-shadow:4px 4px 10px rgba(0,0,0,0.1);
     border-radius:10px;
     margin-left: 20px;
     width: 100px;
+    transition-duration: 200ms;
+}
+.form_quantity input:focus{
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.35);
 }
 .form_comment textarea {
     border-radius:15px;
     border:0;
-    box-shadow:4px 4px 10px rgba(0,0,0,0.1);
+    box-shadow: none;
+    outline: none;
     resize: none;
     width: 100%;
+    padding: 10px;
     height: 60px;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.1);
+    transition-duration: 200ms;
+}
+.form_comment textarea:focus{
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.35);
 }
 .form_quantity {
     display: flex;
@@ -537,7 +549,7 @@ input[type="radio"]:checked::before {
         font-size: 30px;
     }
     .up_button img {
-        width: 90px;
+        width: 70px;
     }
     .category_name {
         font-size: 26px;
@@ -645,6 +657,9 @@ input[type="radio"]:checked::before {
         padding-right: 200px;
         padding-left: 200px;
         font-size: 48px;
+    }
+    .up_button img {
+        width: 120px;
     }
     .category_name {
         font-size: 38px;

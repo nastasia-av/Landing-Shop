@@ -117,7 +117,7 @@ function ChangeTheme()
     let theme = "";
     const image = document.getElementById("up_image");
 
-    if(currTheme == lightTheme) {
+    if(btn.getElementsByTagName("input")[0].checked) {
    	    currTheme = darkTheme;
    	    theme = "dark";
         image.setAttribute("src","./img/up_dark.png")
