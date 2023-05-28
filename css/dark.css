@@ -1,0 +1,57 @@
+body {
+    background-color: #252525;
+    color: #f4f4f4;
+}
+nav {
+    background-color: #252525;
+}
+nav li a,
+.footer_cat ul li a {
+    color: #cdcdcd;
+}
+.catalog_box {
+    background: #252525cc;
+}
+.catalog_box_border {
+    border: solid 2px rgb(255, 255, 255);
+}
+.catalog {
+    color: #cdcdcd;
+}
+.sticky {
+    box-shadow: 0px 8px 15px -9px #000000;
+}
+.card {
+    border-bottom: 2px solid #1b1b1b;
+    box-shadow: 2px 2px 5px 0px #101010;
+    background: #333333;
+}
+.card:hover {
+    border-bottom: 4px solid #cacaca;
+}
+.product_list {
+    background: #272727;
+}
+.product_buy,
+.modal_submit-button,
+.modal_close-button {
+    background-color: #181818;
+    color: #f4f4f4;
+}
+.card:hover .product_buy,
+.modal_submit-button:hover,
+.modal_close-button:hover {
+    background-color: #757575;
+    color: #fff;
+}
+.modal_content {
+    background: #252525;
+}
+.form_quantity_input,
+.form_comment textarea {
+    background-color: #757575;
+    color: #f4f4f4
+}
+.footer {
+    background-color:#202020;
+}

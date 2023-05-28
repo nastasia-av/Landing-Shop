@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/light.css" id="theme-link">
+    <title>Some shop</title>
+</head>
+<body id="body">
+    <header>
+        <a id="top"></a>
+        <img src="./img/icon.png" alt="" class="logo" id="logo"> 
+        <span class="shop_name">Название магазина</span>
+    </header>
+    <hr>
+    <nav id = "navbar">
+        <img src="./img/icon.png" alt="" class="nav_logo" id="nav_logo">
+        <div class = "nav_list">
+            <img src="./img/drop.png"  alt=""class="dropbtn" onclick="show_dropdown()">
+            <ul id="cat_list"></ul>
+        </div> 
+        <label class="switch theme-button" id="theme-button">
+            <input type="checkbox">
+            <span class="slider round"></span>
+        </label>
+    </nav>
+    <div class="content">
+        <div class="greet_img">
+            <div class="catalog_box">
+                <div class="catalog_box_border">
+                    <h1 class="catalog">КАТАЛОГ</h1>
+                </div>
+            </div>
+        </div>
+        <main id="main">
+        </main>
+    </div>
+    <div class="up_button" id="up_button">
+        <a href="#top"><img src="./img/up_light.png" alt="" id="up_image"></a>
+    </div>
+    <div class="modal" id="modal-1">
+        <div class="modal_content">
+          <h1 class="modal_title" id="modal_title"></h1>
+          <form class="modal_description" id="modal_description">
+            <div class="form_quantity">
+                <p class="form_quantity_p">Введите количество:</p>
+                <input type="number" class="form_quantity_input" name="quantity" min="1" required/>
+            </div> 
+            <p class="form_color_p">Выберите цвет:</p>
+            <div class="form_color">
+                <div class="form_color_option">
+                    <input type="radio" name="color" id="black" checked="checked">
+                    <label for="black">Черный</label>
+                </div>
+                <div class="form_color_option">
+                    <input type="radio" name="color" id="white">
+                    <label for="white">Белый</label>
+                </div>
+                <div class="form_color_option">
+                    <input type="radio" name="color" id="red">
+                    <label for="red">Красный</label>
+                </div>
+                <div class="form_color_option">
+                    <input type="radio" name="color" id="blue">
+                    <label for="blue">Синий</label>
+                </div>
+            </div>
+            <div class="form_comment">
+                <p class="form_comm_p">Комментарий:</p>
+                <textarea name="comment" id="comment" maxlength="2000"></textarea>
+            </div>
+            <div class="form_buttons">
+                <button type="submit" class="modal_submit-button" form="modal_description">Купить</button>
+                <button class="modal_close-button">Закрыть</button>
+            </div>
+          </form>
+        </div>
+    </div>
+    <footer class="footer">
+        <table class = "footer_content">
+            <tr>
+                <td class="footer_shop">
+                    <span class="footer_shop_name">Название магазина</span>
+                    <p class="footer_shop_info">
+                        Место, где будет написана какая-либо информацию о магазине/любая дополнительная информация
+                    </p>
+                </td>
+                <td class="footer_cat">
+                    <span class="footer_cat_label">Каталог</span>
+                    <div class = "footer_list">
+                        <ul id="footer_cat_list"></ul>
+                    </div>
+                </td>
+                <td class="footer_contacts">
+                    <span class="footer_contacts_label">Свяжитесь с нами</span> <br>
+                    <span class="footer_contacts_email">Почта</span> <br>
+                    <span class="footer_contacts_phone">Телефон</span>
+                </td>
+            </tr>
+        </table>
+        <hr>
+        <div class="footer_copyright">
+            <p class="copyright">&#169; 2023 Название магазина</p>
+        </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

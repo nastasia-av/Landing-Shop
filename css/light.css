@@ -1,0 +1,57 @@
+body {
+    background-color: #f4f4f4;
+    color: #373737;
+}
+nav {
+    background-color: #f4f4f4;
+}
+nav li a,
+.footer_cat ul li a {
+    color: #373737;
+}
+nav li a:hover,
+.footer_cat ul li a:hover {
+    color: #5d5d5d;
+}
+.catalog_box {
+    background: rgba(255, 255, 255, 0.8);
+}
+.catalog_box_border {
+    border: solid 2px black;
+}
+.catalog {
+    color: #373737;
+}
+.sticky {
+    box-shadow: 0px 8px 15px -9px #7F7F7F;
+}
+.card {
+    border-bottom: 2px solid #dddddd;
+    box-shadow: 2px 2px 5px 0px #D6D6D6;
+    background: #e4e4e4;
+}
+.card:hover {
+    border-bottom: 4px solid #9a9a9a;
+}
+.product_list {
+    background: #fafafa;
+}
+.product_buy,
+.modal_submit-button,
+.modal_close-button {
+    background-color: #fff;
+}
+.card:hover .product_buy,
+.modal_submit-button:hover,
+.modal_close-button:hover {
+    background-color: #9a9a9a;
+    color: #fff;
+}
+.modal_content {
+    background: #f9f9f9;
+}
+.footer {
+    background-color:#dddddd;
+}
+
+
